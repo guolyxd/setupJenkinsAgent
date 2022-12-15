@@ -9,9 +9,9 @@ jenkins : blueOcean latest version
 3. Visit "http://localhost:8080" .
 4. Visit execute log, copy jenkins initial password from the log like "816e250da68f4280bd8ed252fb9dd8be".
 5. Put into step3 unlock page.then click continue.
-6. Click one of the two options shown: 
-   Install suggested plugins - to install the recommended set of plugins, which are based on most common use cases.
-   Select plugins to install - to choose which set of plugins to initially install. When you first access the plugin selection page, the suggested plugins are selected by default.
+6. Click one of the two options shown.
+6.1 Install suggested plugins - to install the recommended set of plugins, which are based on most common use cases.
+6.2 Select plugins to install - to choose which set of plugins to initially install. When you first access the plugin selection page, the suggested plugins are selected by default.
 7. Create the first admin user (I use admin/test).
 8. Follow the guide restart the jenkins.
 
