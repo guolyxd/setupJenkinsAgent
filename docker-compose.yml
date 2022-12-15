@@ -1,7 +1,7 @@
-version: '3.7'
+version: '2.1'
 services:
 #  jenkinsSlave:
-#      image: jenkinsci/blueocean:latest
+#      image: jenkinsci/jnlp-slave:latest
 #      depends_on:
 #        jenkinsMaster:
 #          condition: service_healthy
@@ -13,16 +13,15 @@ services:
 #        - JENKINS_SECRET=jromero:lalala
 #        - JNLP_PROTOCOL_OPTS=-Dorg.jenkinsci.remoting.engine.JnlpProtocol3.disabled=false
 #        - JAVA_OPTS=-Xms2G -Xmx2G
-
   jenkinsMaster:
-    image: jenkins/jenkins:lts
+    image: jenkinsci/blueocean:latest
     ports:
       - "8080:8080"
       - "50000:50000"
     volumes:
       - /home/jromero/pv/jenkins/master:/var/jenkins_home
-#    healthcheck:
-#      test: ["CMD", "curl", "http://jenkinsMaster:8080"]
+   healthcheck:
+      test: ["CMD", "curl", "http://jenkinsMaster:8080"]
 #      interval: 20s
 #      timeout: 3s
 #      retries: 3
