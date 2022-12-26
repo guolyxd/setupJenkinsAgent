@@ -7,6 +7,6 @@ services:
      ports:
       - 8080:8080
      volumes:
-      - '/var/lib/jenkins:/var/lib/jenkins'
-      - '/var/run/docker.sock:/var/run/docker.sock'
-      - '/var/lib/jenkins/apache-maven-3.6.3:/usr/local/maven'
+      - /var/lib/jenkins:/var/lib/jenkins
+      - /var/run/docker.sock:/var/run/docker.sock
+      - /var/lib/jenkins/apache-maven-3.6.3:/usr/local/maven
