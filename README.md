@@ -16,3 +16,7 @@ jenkins : blueOcean latest version
 8. Follow the guide restart the jenkins.
 
 
+
+The latest version of jenkins install please follow the guide:
+https://www.jenkins.io/doc/book/installing/docker/
+
